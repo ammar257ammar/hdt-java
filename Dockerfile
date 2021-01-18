@@ -3,7 +3,7 @@ from maven:3-jdk-8
 COPY . /usr/local/src/hdt-java
 
 RUN cd /usr/local/src/hdt-java \
-  && mvn install \
+  && mvn install -DskipTests -Dgpg.skip=true \
   && cd hdt-java-package \
   && mvn assembly:single \
   && mv target/hdt-java-*/hdt-java-* /opt/hdt-java
