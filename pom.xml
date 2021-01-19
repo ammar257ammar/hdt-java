@@ -114,20 +114,8 @@
     <url>https://github.com/rdfhdt/hdt-java/issues</url>
   </issueManagement>
 
-	<repositories>
-		<repository>
-		    <id>jitpack.io</id>
-		    <url>https://jitpack.io</url>
-		</repository>
-	</repositories>
-	
   <dependencyManagement>
     <dependencies>
-      <dependency>
-		 <groupId>com.github.ammar257ammar.jena</groupId>
-		 <artifactId>core</artifactId>
-		 <version>655b766</version>
-	  </dependency>
       <dependency>
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-classic</artifactId>
